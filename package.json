@@ -1,0 +1,38 @@
+{
+  "name": "dragon_contracts_truffle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node script/test.js",
+    "compile": "truffle compile",
+    "ganache": "ganache-cli -e 1000",
+    "migrate": "node script/migrate.js",
+    "migrateTest": "node script/migrate.js --network polygon_test",
+    "migrateDev": "node script/migrate.js --network development",
+    "mocha": "mocha --exit --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@alch/alchemy-web3": "^1.4.2",
+    "@openzeppelin/contracts": "^4.5.0",
+    "@truffle/debug-utils": "^6.0.12",
+    "@truffle/hdwallet-provider": "^2.0.4",
+    "ethers": "^5.6.8",
+    "ganache-cli": "^6.12.2",
+    "inquirer": "^7.1.0",
+    "truffle": "5.4.33",
+    "web3": "^1.7.1"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-environment": "^0.1.9",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "chai": "^4.3.6",
+    "mocha": "^9.2.2",
+    "truffle-plugin-verify": "^0.5.23"
+  }
+}
